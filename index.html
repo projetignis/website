@@ -69,8 +69,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">À propos</a>
                     </li>
-                    <li class="nav-item" style="display:none;">
-                        <a class="nav-link" href="#contact">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Nous contacter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Notre équipe</a>
                     </li>
                 </ul>
 
@@ -208,7 +211,7 @@
                                     <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
                                     <p class="animated mb-8" data-animation="fadeInUp" data-animation-delay="400">Nous serions ravis de lire ce que vous avez à nous dire et de vous répondre le plus rapidement possible.</p>
                                     <div class="contact-form text-left animated" data-animation="fadeInUp" data-animation-delay="600">
-                                        <form class="mb-0" id="cf" name="cf" action="/contact" method="post" autocomplete="off">
+                                        <form class="mb-0" id="contact-form" name="contact-form" action="/contact" method="post" autocomplete="off">
                                             <div class="form-row">
                                                 <div class="col-12 col-md-6">
                                                     <div class="form-group">
@@ -227,7 +230,7 @@
                                                 </div>
                                                 <div class="col-12 mb-4">
                                                     <div class="form-group">
-                                                        <textarea name="cf-message" id="cf-message" placeholder="Contenu de votre message..." class="form-control required" rows="7"></textarea>
+                                                        <textarea name="cf-content" id="cf-content" placeholder="Contenu de votre message..." class="form-control required" rows="7"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 d-none">
@@ -235,11 +238,27 @@
                                                 </div>
                                                 <input type="hidden" name="prefix" value="cf-">
                                                 <div class="col-12 text-center">
-                                                    <button class="btn btn-primary" type="submit" id="cf-submit" name="cf-submit">Envoyer</button>
+                                                    <button class="btn btn-primary" type="submit" id="submit" name="cf-submit">Envoyer</button>
                                                 </div>
                                             </div>
                                         </form>
                                         <div class="contact-form-result text-center"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Team -->
+                <div class="website-slider-item" id="team">
+                    <section class="min-vh-100 d-flex">
+                        <div class="container text-white text-center">
+                            <div class="row">
+                                <div class="col-12 col-lg-9 mx-lg-auto">
+                                    <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Notre équipe</h2>
+                                    <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+                                    <div class="contact-form text-left animated" data-animation="fadeInUp" data-animation-delay="600">
                                     </div>
                                 </div>
                             </div>
@@ -318,6 +337,37 @@
         <script src="assets/vendor/vegas/vegas.min.js"></script>
         <script src="assets/vendor/granim.js/dist/granim.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#submit').click(function() {
+                    console.log("click");
+                    var data = {
+                        name:  $('#cf-name').val(),
+                        email:  $('#cf-email').val(),
+                        subject:  $('#cf-subject').val(),
+                        content:  $('#cf-content').val(),
+                    };
+                    /* $.ajax({
+                        type: "POST",
+                        url: "http://127.0.0.1:8000",
+                        data: JSON.stringify(data),
+                        contentType: "application/json; charset=utf-8",
+                        crossDomain: true,
+                        dataType: "json",
+                        success: function (data, status, jqXHR) {
+
+                            alert(success);
+                        },
+
+                        error: function (jqXHR, status) {
+                            // error handler
+                            console.log(jqXHR);
+                            alert('fail' + status.code);
+                        }
+                    }); */
+                });
+            });
+        </script>
 
     </body>
     </html>
