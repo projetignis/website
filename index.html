@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
     <!-- Title -->
@@ -10,11 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css" type="text/css">
     <link rel="stylesheet" href="assets/vendor/vegas/vegas.min.css">
     <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CMontserrat:200,300,400,500,700">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CMontserrat:200,300,400,500,700">
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <!-- Inline styles -->
@@ -25,6 +29,7 @@
     </style>
 
 </head>
+
 <body class="slide-website">
 
     <!-- Loader -->
@@ -37,337 +42,580 @@
     <!-- Overlay -->
     <div class="overlay overlay-global">
         <div class="overlay-inner bg-image-holder bg-cover">
-            <img style="object-fit: cover; height: 100%; width: 100%;" src="/assets/images/background.jpg" alt="background">
+            <img style="object-fit: cover; height: 100%; width: 100%;" src="/assets/images/background.jpg"
+                alt="background">
         </div>
         <div class="overlay-inner bg-dark opacity-70"></div>
     </div>
 
-        <!-- Navigation -->
-        <nav class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white p-lg-4 p-xl-5" data-navbar-base="navbar-dark" data-navbar-toggled="navbar-light" data-navbar-scrolled="navbar-light">
+    <!-- Navigation -->
+    <nav class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white p-lg-4 p-xl-5"
+        data-navbar-base="navbar-dark" data-navbar-toggled="navbar-light" data-navbar-scrolled="navbar-light">
 
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" class="navbar-brand-img" alt="">
-            </a>
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" class="navbar-brand-img" alt="">
+        </a>
 
-            <!-- Toggler -->
-            <button class="navbar-toggler-alternative" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-alternative-icon"></span>
-            </button>
+        <!-- Toggler -->
+        <button class="navbar-toggler-alternative" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-alternative-icon"></span>
+        </button>
 
-            <!-- Collapse -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                <!-- Navigation -->
-                <ul class="navbar-nav ml-auto" id="navigation">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Accueil</a>
+            <!-- Navigation -->
+            <ul class="navbar-nav ml-auto" id="navigation">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#subscribe" style="display: none;">Inscrivez-vous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Nous contacter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Notre équipe</a>
+                </li>
+            </ul>
+
+            <!-- Buttons -->
+            <div style="display: none;">
+                <button type="button" class="btn btn-soft-white d-none d-lg-inline-block mb-3 mb-lg-0 ml-lg-3"
+                    data-toggle="modal" data-target="#documentationModal" data-navbar-base="btn-soft-white"
+                    data-navbar-scrolled="btn-soft-secondary">Documentation</button>
+                <button type="button" class="btn btn-soft-secondary d-block d-lg-none mb-3 mb-lg-0 w-100"
+                    data-toggle="modal" data-target="#documentationModal">Documentation</button>
+                <a class="btn btn-primary d-block d-lg-inline-block ml-lg-3"
+                    href="https://themeforest.net/item/blum-responsive-coming-soon-template/8992023" target="_blank"
+                    rel="noopener">Buy now</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="website-slider">
+        <div class="website-slider-inner">
+
+            <!-- Home -->
+            <div class="website-slider-item" id="home">
+                <section class="min-vh-100 d-flex">
+                    <div class="container align-self-center text-white text-center">
+                        <h1 class="mb-4 animated" data-animation="fadeInUp">Nous concevons l'équipement des pompiers de
+                            demain</h1>
+                        <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Nous proposons des
+                            solutions technologiques pour vous accompagner dans les situations les plus extrêmes.</p>
+                        <a href="#about" class="btn btn-soft-white mr-3 scrollto animated" data-animation="fadeInUp"
+                            data-animation-delay="400">En savoir plus</a>
+                        <a style="display: none;" href="#subscribe" class="btn btn-soft-white scrollto animated"
+                            data-animation="fadeInUp" data-animation-delay="600">Inscrivez-vous</a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Subscribe -->
+            <div class="website-slider-item" id="subscribe">
+                <section class="min-vh-100 d-flex">
+                    <div class="container align-self-center text-white">
+                        <div class="row mb-8 text-center">
+                            <div class="col-12 col-lg-9 mx-lg-auto">
+                                <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Inscrivez-vous à notre liste de
+                                    diffusion</h2>
+                                <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200">
+                                    <span></span>
+                                </div>
+                                <p class="mb-0 animated" data-animation="fadeInUp" data-animation-delay="400">En vous
+                                    inscrivant à notre liste de diffusion, vous pourrez rester informé de tous nos
+                                    progrès.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-8 col-xl-6 mx-lg-auto">
+                                <div class="subscribe-form animated" data-animation="fadeInUp"
+                                    data-animation-delay="600">
+                                    <form class="mb-0" id="sf" name="sf" action="/subscribe" method="post"
+                                        autocomplete="off">
+                                        <div class="form-row">
+                                            <div class="col-12 col-md-8">
+                                                <div class="form-group">
+                                                    <input type="email" id="sf-email" name="sf-email"
+                                                        placeholder="Saisissez votre adresse e-mail"
+                                                        class="form-control required">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-none">
+                                                <input type="text" id="sf-botcheck" name="sf-botcheck" value=""
+                                                    class="form-control" />
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <button class="btn btn-primary btn-block" type="submit" id="sf-submit"
+                                                    name="sf-submit">Rester informé</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="subscribe-form-result text-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- About -->
+            <div class="website-slider-item" id="about">
+                <section class="min-vh-100 d-flex">
+                    <div class="container align-self-center text-white">
+                        <div class="row mb-8 text-center">
+                            <div class="col-12 col-lg-9 mx-lg-auto">
+                                <h2 class="h1 mb-4 animated" data-animation="fadeInUp">A propos de nous</h2>
+                                <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200">
+                                    <span></span>
+                                </div>
+                                <p class="mb-0 animated" data-animation="fadeInUp" data-animation-delay="400">Nous
+                                    sommes une équipe d’étudiants en informatique de Nancy et sommes actuellement en
+                                    train de développer notre premier projet, Ignis.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-5 mb-lg-0 pr-lg-6 animated" data-animation="fadeInUp"
+                                data-animation-delay="600">
+                                <p class="mb-0">Aujourd’hui, les risques pour un pompier en incendie sont nombreux.
+                                    Depuis trop longtemps, malgré l'essor des nouvelles technologies, leur matériel n'a
+                                    pas concrètement évolué. Portés par un rêve et guidés par un ancien pompier
+                                    volontaire, nous pensons qu’il est temps de moderniser leur équipement. Nous avons
+                                    donc décidé de créer le projet Ignis afin de mettre à profit notre expertise pour
+                                    améliorer la sécurité de ceux qui sauvent nos vies.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 pl-lg-6 animated" data-animation="fadeInUp"
+                                data-animation-delay="800">
+                                <p class="mb-0">L'Ignis est un objet léger, portatif et simple à installer qui viendra
+                                    se greffer sur votre casque F1. Grâce à celui-ci, vous aurez accès en temps réel à
+                                    une multitude d’informations de votre choix sur la visière de votre casque, telles
+                                    que la quantité d’air restant dans votre bouteille, l’explosivité ou encore la
+                                    température ambiante. Les données seront affichées sur votre visière grâce à la
+                                    technologie de l’affichage tête haute, mais aussi disponible pour votre chef d’agrès
+                                    via une application, lui permettant de prendre les meilleures décisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Services -->
+            <div class="website-slider-item" id="services">
+                <section class="min-vh-100 d-flex">
+                    <div class="container align-self-center text-white">
+                        <div class="row mb-8 text-center">
+                            <div class="col-12 col-lg-9 mx-lg-auto">
+                                <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Services</h2>
+                                <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200">
+                                    <span></span>
+                                </div>
+                                <p class="mb-0 animated" data-animation="fadeInUp" data-animation-delay="400">Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-7 mb-lg-0 animated" data-animation="fadeInUp"
+                                data-animation-delay="600">
+                                <div class="icon-7x text-primary mb-4">
+                                    <i class="ti-timer"></i>
+                                </div>
+                                <h4 class="h5 mb-2">Launch Quickly</h4>
+                                <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor,
+                                    facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula
+                                    malesuada, quis condimentum eros sollicitudin.</p>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-7 mb-lg-0 animated" data-animation="fadeInUp"
+                                data-animation-delay="800">
+                                <div class="icon-7x text-primary mb-4">
+                                    <i class="ti-brush-alt"></i>
+                                </div>
+                                <h4 class="h5 mb-2">Stylish Design</h4>
+                                <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor,
+                                    facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula
+                                    malesuada, quis condimentum eros sollicitudin.</p>
+                            </div>
+                            <div class="col-12 col-lg-4 animated" data-animation="fadeInUp" data-animation-delay="1000">
+                                <div class="icon-7x text-primary mb-4">
+                                    <i class="ti-book"></i>
+                                </div>
+                                <h4 class="h5 mb-2">Well Documented</h4>
+                                <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor,
+                                    facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula
+                                    malesuada, quis condimentum eros sollicitudin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Contact -->
+            <div class="website-slider-item" id="contact">
+                <section class="min-vh-100 d-flex">
+                    <div class="container align-self-center text-white text-center">
+                        <div class="row">
+                            <div class="col-12 col-lg-9 mx-lg-auto">
+                                <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Contactez-nous</h2>
+                                <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200">
+                                    <span></span>
+                                </div>
+                                <p class="animated mb-8" data-animation="fadeInUp" data-animation-delay="400">Nous
+                                    serions ravis de lire ce que vous avez à nous dire et de vous répondre le plus
+                                    rapidement possible.</p>
+                                <div class="contact-form text-left animated" data-animation="fadeInUp"
+                                    data-animation-delay="600">
+                                    <form class="mb-0" id="contact-form" name="contact-form" action="/contact"
+                                        method="post" autocomplete="off">
+                                        <div class="form-row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" id="cf-name" name="cf-name"
+                                                        placeholder="Saisissez votre nom" class="form-control required">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="email" id="cf-email" name="cf-email"
+                                                        placeholder="Saisissez votre adresse e-mail"
+                                                        class="form-control required">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <input type="text" id="cf-subject" name="cf-subject"
+                                                        placeholder="Sujet" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-4">
+                                                <div class="form-group">
+                                                    <textarea name="cf-content" id="cf-content"
+                                                        placeholder="Contenu de votre message..."
+                                                        class="form-control required" rows="7"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-none">
+                                                <input type="text" id="cf-botcheck" name="cf-botcheck" value="">
+                                            </div>
+                                            <input type="hidden" name="prefix" value="cf-">
+                                            <div class="col-12 text-center">
+                                                <button class="btn btn-primary" type="submit" id="submit"
+                                                    name="cf-submit">Envoyer</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="contact-form-result text-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Team -->
+            <div class="website-slider-item" id="team">
+                <section class="min-vh-100 d-flex">
+                    <div class="container text-white text-center">
+                        <div class="row">
+                            <div class="col-12 col-lg-9 mx-lg-auto">
+                                <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Notre équipe</h2>
+                                <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200">
+                                    <span></span>
+                                </div>
+                                <div class="contact-form text-left animated" data-animation="fadeInUp"
+                                    data-animation-delay="600">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 mb-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="assets/images/justin.jpg" class="img-fluid rounded-circle" style="
+                                                width: 160px;
+                                                height: 150px;
+                                                ">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div class="pt-2">
+                                            <h5 style="font-weight: 500;" class="mt-4 font-weight-medium mb-0">Justin
+                                                Marcos</h5>
+                                            <h6 style="color: #8d97ad; line-height: 24px; font-size: 17px;"
+                                                class=" mb-3">Project and business management</h6>
+                                            <a type="button" href="https://www.linkedin.com/in/justin-marcos-5157b1176/"
+                                                class="btn-floating btn-lg mx-1 mb-0 btn-fb">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="assets/images/beaussier.jpg" class="img-fluid rounded-circle" style="
+                                                width: 160px;
+                                                height: 150px;
+                                                ">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div class="pt-2">
+                                            <h5 style="font-weight: 500;" class="mt-4 font-weight-medium mb-0">Adrien
+                                                Beaussier</h5>
+                                            <h6 style="color: #8d97ad; line-height: 24px; font-size: 17px;"
+                                                class=" mb-3">Business management and communication​</h6>
+                                            <a type="button" href="https://www.linkedin.com/in/adrien-beaussier-042/"
+                                                class="btn-floating btn-lg mx-1 mb-0 btn-fb">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="assets/images/brignon.jpg" class="img-fluid rounded-circle" style="
+                                                width: 160px;
+                                                height: 150px;
+                                                ">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div class="pt-2">
+                                            <h5 style="font-weight: 500;" class="mt-4 font-weight-medium mb-0">Adrien
+                                                Brignon</h5>
+                                            <h6 style="color: #8d97ad; line-height: 24px; font-size: 17px;"
+                                                class=" mb-3">Chief technical officer​
+                                                &#10240&#10240DevOps&#10240&#10240</h6>
+                                            <a type="button" href="https://www.linkedin.com/in/adrienbrignon/"
+                                                class="btn-floating btn-lg mx-1 mb-0 btn-fb">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="assets/images/kylian.jpg" class="img-fluid rounded-circle" style="
+                                                width: 160px;
+                                                height: 150px;
+                                                ">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div class="pt-2">
+                                            <h5 style="font-weight: 500;" class="mt-4 font-weight-medium mb-0">Kylian
+                                                Maugué</h5>
+                                            <h6 style="color: #8d97ad; line-height: 24px; font-size: 17px;"
+                                                class=" mb-3">Software and hardware developer</h6>
+                                            <a type="button"
+                                                href="https://www.linkedin.com/in/kylian-maugu%C3%A9-008a76159/"
+                                                class="btn-floating btn-lg mx-1 mb-0 btn-fb">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="assets/images/thomas.JPG" class="img-fluid rounded-circle" style="
+                                                width: 160px;
+                                                height: 150px;
+                                                ">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div class="pt-2">
+                                            <h5 style="font-weight: 500;" class="mt-4 font-weight-medium mb-0">Thomas
+                                                Renck</h5>
+                                            <h6 style="color: #8d97ad; line-height: 24px; font-size: 17px;"
+                                                class=" mb-3">Software and hardware developer</h6>
+                                            <a type="button" href="https://www.linkedin.com/in/thomas-renck/"
+                                                class="btn-floating btn-lg mx-1 mb-0 btn-fb">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="assets/images/lucas.JPG" class="img-fluid rounded-circle" style="
+                                                width: 160px;
+                                                height: 150px;
+                                                ">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div class="pt-2">
+                                            <h5 style="font-weight: 500;" class="mt-4 font-weight-medium mb-0">Lucas De
+                                                Curtis</h5>
+                                            <h6 style="color: #8d97ad; line-height: 24px; font-size: 17px;"
+                                                class=" mb-3">Software and hardware developer</h6>
+                                            <a type="button" href="https://www.linkedin.com/in/lucas-de-curtis/"
+                                                class="btn-floating btn-lg mx-1 mb-0 btn-fb">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="assets/images/jason.JPG" class="img-fluid rounded-circle" style="
+                                                width: 160px;
+                                                height: 150px;
+                                                ">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div class="pt-2">
+                                            <h5 style="font-weight: 500;" class="mt-4 mb-0">Jason Lucas</h5>
+                                            <h6 style="color: #8d97ad; line-height: 24px; font-size: 17px;"
+                                                class=" mb-3">Software and hardware developer</h6>
+                                            <a type="button" href="https://www.linkedin.com/in/jason-lucas-484b15175/"
+                                                class="btn-floating btn-lg mx-1 mb-0 btn-fb">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="position-relative">
+        <div class="overlay overlay-advanced d-xl-none">
+            <div class="overlay-inner bg-dark"></div>
+        </div>
+        <div class="container-fluid px-4 py-9 p-xl-0">
+            <nav class="mb-5 mb-xl-0 position-xl-fixed bottom-0 left-0 z-index-5 mb-xl-5 ml-xl-5">
+                <ul class="list-unstyled d-flex flex-xl-column justify-content-center m-n1">
+                    <li class="m-1">
+                        <a class="btn btn-sm btn-icon btn-soft-white" href="https://www.facebook.com/projetignis">
+                            <i class="fab fa-facebook-f btn-icon-inner"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#subscribe" style="display: none;">Inscrivez-vous</a>
+                    <li class="m-1">
+                        <a class="btn btn-sm btn-icon btn-soft-white" href="https://twitter.com/projetignis">
+                            <i class="fab fa-twitter btn-icon-inner"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">À propos</a>
+                    <li class="m-1">
+                        <a class="btn btn-sm btn-icon btn-soft-white"
+                            href="https://www.linkedin.com/company/projetignis">
+                            <i class="fab fa-linkedin-in btn-icon-inner"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Nous contacter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Notre équipe</a>
+                    <li class="m-1">
+                        <a class="btn btn-sm btn-icon btn-soft-white" href="https://github.com/projetignis">
+                            <i class="fab fa-github btn-icon-inner"></i>
+                        </a>
                     </li>
                 </ul>
-
-                <!-- Buttons -->
-                <div style="display: none;">
-                    <button type="button" class="btn btn-soft-white d-none d-lg-inline-block mb-3 mb-lg-0 ml-lg-3" data-toggle="modal" data-target="#documentationModal" data-navbar-base="btn-soft-white" data-navbar-scrolled="btn-soft-secondary">Documentation</button>
-                    <button type="button" class="btn btn-soft-secondary d-block d-lg-none mb-3 mb-lg-0 w-100" data-toggle="modal" data-target="#documentationModal">Documentation</button>
-                    <a class="btn btn-primary d-block d-lg-inline-block ml-lg-3" href="https://themeforest.net/item/blum-responsive-coming-soon-template/8992023" target="_blank" rel="noopener">Buy now</a>
-                </div>
-
-            </div>
-        </nav>
-
-        <!-- Slider -->
-        <div class="website-slider">
-            <div class="website-slider-inner">
-
-                <!-- Home -->
-                <div class="website-slider-item" id="home">
-                    <section class="min-vh-100 d-flex">
-                        <div class="container align-self-center text-white text-center">
-                            <h1 class="mb-4 animated" data-animation="fadeInUp">Nous concevons l'équipement des pompiers de demain</h1>
-                            <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Nous proposons des solutions technologiques pour vous accompagner dans les situations les plus extrêmes.</p>
-                            <a href="#about" class="btn btn-soft-white mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">En savoir plus</a>
-                            <a style="display: none;" href="#subscribe" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600">Inscrivez-vous</a>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Subscribe -->
-                <div class="website-slider-item" id="subscribe">
-                    <section class="min-vh-100 d-flex">
-                        <div class="container align-self-center text-white">
-                            <div class="row mb-8 text-center">
-                                <div class="col-12 col-lg-9 mx-lg-auto">
-                                    <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Inscrivez-vous à notre liste de diffusion</h2>
-                                    <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
-                                    <p class="mb-0 animated" data-animation="fadeInUp" data-animation-delay="400">En vous inscrivant à notre liste de diffusion, vous pourrez rester informé de tous nos progrès.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-8 col-xl-6 mx-lg-auto">
-                                    <div class="subscribe-form animated" data-animation="fadeInUp" data-animation-delay="600">
-                                        <form class="mb-0" id="sf" name="sf" action="/subscribe" method="post" autocomplete="off">
-                                            <div class="form-row">
-                                                <div class="col-12 col-md-8">
-                                                    <div class="form-group">
-                                                        <input type="email" id="sf-email" name="sf-email" placeholder="Saisissez votre adresse e-mail" class="form-control required">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 d-none">
-                                                    <input type="text" id="sf-botcheck" name="sf-botcheck" value="" class="form-control" />
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <button class="btn btn-primary btn-block" type="submit" id="sf-submit" name="sf-submit">Rester informé</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <div class="subscribe-form-result text-center"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- About -->
-                <div class="website-slider-item" id="about">
-                    <section class="min-vh-100 d-flex">
-                        <div class="container align-self-center text-white">
-                            <div class="row mb-8 text-center">
-                                <div class="col-12 col-lg-9 mx-lg-auto">
-                                    <h2 class="h1 mb-4 animated" data-animation="fadeInUp">A propos de nous</h2>
-                                    <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
-                                    <p class="mb-0 animated" data-animation="fadeInUp" data-animation-delay="400">Nous sommes une équipe d’étudiants en informatique de Nancy et sommes actuellement en train de développer notre premier projet, Ignis.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6 mb-5 mb-lg-0 pr-lg-6 animated" data-animation="fadeInUp" data-animation-delay="600">
-                                    <p class="mb-0">Aujourd’hui, les risques pour un pompier en incendie sont nombreux. Depuis trop longtemps, malgré l'essor des nouvelles technologies, leur matériel n'a pas concrètement évolué. Portés par un rêve et guidés par un ancien pompier volontaire, nous pensons qu’il est temps de moderniser leur équipement. Nous avons donc décidé de créer le projet Ignis afin de mettre à profit notre expertise pour améliorer la sécurité de ceux qui sauvent nos vies.</p>
-                                </div>
-                                <div class="col-12 col-lg-6 pl-lg-6 animated" data-animation="fadeInUp" data-animation-delay="800">
-                                    <p class="mb-0">L'Ignis est un objet léger, portatif et simple à installer qui viendra se greffer sur votre casque F1. Grâce à celui-ci, vous aurez accès en temps réel à une multitude d’informations de votre choix sur la visière de votre casque, telles que la quantité d’air restant dans votre bouteille, l’explosivité ou encore la température ambiante. Les données seront affichées sur votre visière grâce à la technologie de l’affichage tête haute, mais aussi disponible pour votre chef d’agrès via une application, lui permettant de prendre les meilleures décisions.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Services -->
-                <div class="website-slider-item" id="services">
-                    <section class="min-vh-100 d-flex">
-                        <div class="container align-self-center text-white">
-                            <div class="row mb-8 text-center">
-                                <div class="col-12 col-lg-9 mx-lg-auto">
-                                    <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Services</h2>
-                                    <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
-                                    <p class="mb-0 animated" data-animation="fadeInUp" data-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-4 mb-7 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="600">
-                                    <div class="icon-7x text-primary mb-4">
-                                        <i class="ti-timer"></i>
-                                    </div>
-                                    <h4 class="h5 mb-2">Launch Quickly</h4>
-                                    <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin.</p>
-                                </div>
-                                <div class="col-12 col-lg-4 mb-7 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="800">
-                                    <div class="icon-7x text-primary mb-4">
-                                        <i class="ti-brush-alt"></i>
-                                    </div>
-                                    <h4 class="h5 mb-2">Stylish Design</h4>
-                                    <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin.</p>
-                                </div>
-                                <div class="col-12 col-lg-4 animated" data-animation="fadeInUp" data-animation-delay="1000">
-                                    <div class="icon-7x text-primary mb-4">
-                                        <i class="ti-book"></i>
-                                    </div>
-                                    <h4 class="h5 mb-2">Well Documented</h4>
-                                    <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Contact -->
-                <div class="website-slider-item" id="contact">
-                    <section class="min-vh-100 d-flex">
-                        <div class="container align-self-center text-white text-center">
-                            <div class="row">
-                                <div class="col-12 col-lg-9 mx-lg-auto">
-                                    <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Contactez-nous</h2>
-                                    <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
-                                    <p class="animated mb-8" data-animation="fadeInUp" data-animation-delay="400">Nous serions ravis de lire ce que vous avez à nous dire et de vous répondre le plus rapidement possible.</p>
-                                    <div class="contact-form text-left animated" data-animation="fadeInUp" data-animation-delay="600">
-                                        <form class="mb-0" id="contact-form" name="contact-form" action="/contact" method="post" autocomplete="off">
-                                            <div class="form-row">
-                                                <div class="col-12 col-md-6">
-                                                    <div class="form-group">
-                                                        <input type="text" id="cf-name" name="cf-name" placeholder="Saisissez votre nom" class="form-control required">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <div class="form-group">
-                                                        <input type="email" id="cf-email" name="cf-email" placeholder="Saisissez votre adresse e-mail" class="form-control required">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <input type="text" id="cf-subject" name="cf-subject" placeholder="Sujet" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mb-4">
-                                                    <div class="form-group">
-                                                        <textarea name="cf-content" id="cf-content" placeholder="Contenu de votre message..." class="form-control required" rows="7"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 d-none">
-                                                    <input type="text" id="cf-botcheck" name="cf-botcheck" value="">
-                                                </div>
-                                                <input type="hidden" name="prefix" value="cf-">
-                                                <div class="col-12 text-center">
-                                                    <button class="btn btn-primary" type="submit" id="submit" name="cf-submit">Envoyer</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <div class="contact-form-result text-center"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Team -->
-                <div class="website-slider-item" id="team">
-                    <section class="min-vh-100 d-flex">
-                        <div class="container text-white text-center">
-                            <div class="row">
-                                <div class="col-12 col-lg-9 mx-lg-auto">
-                                    <h2 class="h1 mb-4 animated" data-animation="fadeInUp">Notre équipe</h2>
-                                    <div class="divider animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
-                                    <div class="contact-form text-left animated" data-animation="fadeInUp" data-animation-delay="600">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-            </div>
+            </nav>
+            <p style="display: none;"
+                class="text-center text-xl-right text-white position-xl-fixed bottom-0 right-0 z-index-5 mb-0 mb-xl-5 mr-xl-5">
+                © 2020 Blum - All Rights Reserved</p>
         </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="position-relative">
-            <div class="overlay overlay-advanced d-xl-none">
-                <div class="overlay-inner bg-dark"></div>
-            </div>
-            <div class="container-fluid px-4 py-9 p-xl-0">
-                <nav class="mb-5 mb-xl-0 position-xl-fixed bottom-0 left-0 z-index-5 mb-xl-5 ml-xl-5">
-                    <ul class="list-unstyled d-flex flex-xl-column justify-content-center m-n1">
-                        <li class="m-1">
-                            <a class="btn btn-sm btn-icon btn-soft-white" href="https://www.facebook.com/projetignis">
-                                <i class="fab fa-facebook-f btn-icon-inner"></i>
-                            </a>
-                        </li>
-                        <li class="m-1">
-                            <a class="btn btn-sm btn-icon btn-soft-white" href="https://twitter.com/projetignis">
-                                <i class="fab fa-twitter btn-icon-inner"></i>
-                            </a>
-                        </li>
-                        <li class="m-1">
-                            <a class="btn btn-sm btn-icon btn-soft-white" href="https://www.linkedin.com/company/projetignis">
-                                <i class="fab fa-linkedin-in btn-icon-inner"></i>
-                            </a>
-                        </li>
-                        <li class="m-1">
-                            <a class="btn btn-sm btn-icon btn-soft-white" href="https://github.com/projetignis">
-                                <i class="fab fa-github btn-icon-inner"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p style="display: none;" class="text-center text-xl-right text-white position-xl-fixed bottom-0 right-0 z-index-5 mb-0 mb-xl-5 mr-xl-5">© 2020 Blum - All Rights Reserved</p>
-            </div>
-        </footer>
+    <!-- Documentation modal -->
+    <div class="modal fade" id="documentationModal" tabindex="-1" role="dialog" aria-labelledby="documentation"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content hover-parent">
 
-        <!-- Documentation modal -->
-        <div class="modal fade" id="documentationModal" tabindex="-1" role="dialog" aria-labelledby="documentation" aria-hidden="true">
-            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
-                <div class="modal-content hover-parent">
+                <!-- Close -->
+                <button type="button"
+                    class="btn btn-sm btn-icon btn-primary position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1"
+                    data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times btn-icon-inner"></i>
+                </button>
 
-                    <!-- Close -->
-                    <button type="button" class="btn btn-sm btn-icon btn-primary position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
-                        <i class="fas fa-times btn-icon-inner"></i>
-                    </button>
-
-                    <!-- Modal Body -->
-                    <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-center">
-                        <div class="icon icon-boxed icon-7x rounded bg-soft-primary text-primary mb-5">
-                            <i class="ti-book"></i>
-                        </div>
-                        <h2 id="documentation" class="mb-5">Documentation</h2>
-                        <p class="mb-8">This theme is easy to configure and comes witch a well documented help file, which will assist you in the configuration of your new website in few minutes.</p>
-                        <a class="btn btn-primary d-block d-lg-inline-block ml-lg-3" href="https://themeforest.net/item/blum-responsive-coming-soon-template/8992023" target="_blank" rel="noopener">Buy theme</a>
+                <!-- Modal Body -->
+                <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-center">
+                    <div class="icon icon-boxed icon-7x rounded bg-soft-primary text-primary mb-5">
+                        <i class="ti-book"></i>
                     </div>
-
+                    <h2 id="documentation" class="mb-5">Documentation</h2>
+                    <p class="mb-8">This theme is easy to configure and comes witch a well documented help file, which
+                        will assist you in the configuration of your new website in few minutes.</p>
+                    <a class="btn btn-primary d-block d-lg-inline-block ml-lg-3"
+                        href="https://themeforest.net/item/blum-responsive-coming-soon-template/8992023" target="_blank"
+                        rel="noopener">Buy theme</a>
                 </div>
+
             </div>
         </div>
+    </div>
 
-        <!-- Scripts -->
-        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="assets/vendor/popper.js/dist/popper.min.js"></script>
-        <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-        <script src="assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
-        <script src="assets/vendor/jQuery.countdown/dist/jquery.countdown.min.js"></script>
-        <script src="assets/vendor/vegas/vegas.min.js"></script>
-        <script src="assets/vendor/granim.js/dist/granim.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('#submit').click(function() {
-                    console.log("click");
-                    var data = {
-                        name:  $('#cf-name').val(),
-                        email:  $('#cf-email').val(),
-                        subject:  $('#cf-subject').val(),
-                        content:  $('#cf-content').val(),
-                    };
-                    /* $.ajax({
-                        type: "POST",
-                        url: "http://127.0.0.1:8000",
-                        data: JSON.stringify(data),
-                        contentType: "application/json; charset=utf-8",
-                        crossDomain: true,
-                        dataType: "json",
-                        success: function (data, status, jqXHR) {
+    <!-- Scripts -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/vegas/vegas.min.js"></script>
+    <script src="assets/vendor/granim.js/dist/granim.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#submit').click(function () {
+                console.log("click");
+                var data = {
+                    name: $('#cf-name').val(),
+                    email: $('#cf-email').val(),
+                    subject: $('#cf-subject').val(),
+                    content: $('#cf-content').val(),
+                };
+                /* $.ajax({
+                    type: "POST",
+                    url: "http://127.0.0.1:8000",
+                    data: JSON.stringify(data),
+                    contentType: "application/json; charset=utf-8",
+                    crossDomain: true,
+                    dataType: "json",
+                    success: function (data, status, jqXHR) {
 
-                            alert(success);
-                        },
+                        alert(success);
+                    },
 
-                        error: function (jqXHR, status) {
-                            // error handler
-                            console.log(jqXHR);
-                            alert('fail' + status.code);
-                        }
-                    }); */
-                });
+                    error: function (jqXHR, status) {
+                        // error handler
+                        console.log(jqXHR);
+                        alert('fail' + status.code);
+                    }
+                }); */
             });
-        </script>
+        });
+    </script>
 
-    </body>
-    </html>
+</body>
+
+</html>
